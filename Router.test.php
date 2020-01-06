@@ -18,6 +18,20 @@ class TestRouter extends TestCase{
             'Class does not have method myFunction'
           );
     }
+
+    function testAddRoute(){
+        $router = new Router();
+        $res = $router->addRoute("1","2");
+        $this->assertSame(true, $res);
+    }
+
+    function testAddTwoRoutesWithSamePath(){
+        $router = new Router();
+        $res = $router->addRoute("1","2");
+        $res2 = $router->addRoute("1","3");
+        $this->assertSame(false, $res2);
+    }
+
     function testAddsRouteAndMatches(){
         $router = new Router();
         $router->addRoute("1","2");
