@@ -1,0 +1,17 @@
+REGEX(regular expressions):
+. -> Cualquier caracter
+\ -> escape caracter se usa por ejemplo con /
+\w -> word
+\n -> salto de linea
+\
+() -> grupos
+[] -> conjunto de caracteres posibles
+[^abc] -> conjunto de caracteres excluidos
+[a-z] [0-9] -> entre caracteres
+(a|b) -> a or b
+
+Cuantificadores:
+* -> 0 o más caracteres
+? -> 0 o 1 caracter
++ -> 1 o mas caracteres
+{N,M} -> N es la cantidad minima y M es la cantidad maxima.

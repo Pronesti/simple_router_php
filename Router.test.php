@@ -27,7 +27,7 @@ class TestRouter extends TestCase{
 
     function testAddTwoRoutesWithSamePath(){
         $router = new Router();
-        $res = $router->addRoute("1","2");
+        $router->addRoute("1","2");
         $res2 = $router->addRoute("1","3");
         $this->assertSame(false, $res2);
     }
